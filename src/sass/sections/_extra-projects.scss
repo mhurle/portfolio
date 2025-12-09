@@ -1,0 +1,138 @@
+.extra-projects {
+  background-color: #fff;
+  padding: 5rem 0 10rem 0; // Increased bottom padding for spacing
+
+  .section-title {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    // Removed overflow: hidden from here to allow arrows outside
+  }
+
+  .carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); // Shadow moved to inner
+    background-color: #000; // Dark background for slides
+  }
+
+  .carousel-item {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 450px; // Slightly taller
+      object-fit: cover; // Zoom to fill space, no black bars
+      // background-color: #000; // Removed as image covers area
+      transition: all 0.3s ease;
+    }
+
+    // Removed hover scale effect on image as it might conflict with contain/letterboxing
+    // or we can keep it subtle
+    &:hover img {
+      transform: scale(1.01);
+    }
+
+    .carousel-caption {
+      // Stronger, taller gradient for better contrast
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 100%);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 60px 20px 30px;
+      text-align: center;
+
+      h5 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #fff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); // Added text shadow
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #fff;
+        opacity: 1;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); // Added text shadow
+      }
+
+      .btn-visit {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 25px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  // Custom styling for controls
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    background-color: #2c3e50; // Dark color for arrows
+    border-radius: 50%;
+    z-index: 5;
+
+    // Position outside the card on larger screens
+    position: absolute;
+
+    &:hover {
+      opacity: 1;
+      background-color: #000;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 20px;
+      height: 20px;
+      background-size: 100%;
+    }
+  }
+
+  .carousel-control-prev {
+    left: -80px;
+  }
+
+  .carousel-control-next {
+    right: -80px;
+  }
+
+  // Responsive adjustments
+  @media (max-width: 991px) {
+    .carousel-control-prev {
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-control-next {
+      right: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-item img {
+      height: 300px; // Smaller height on mobile
+    }
+  }
+}

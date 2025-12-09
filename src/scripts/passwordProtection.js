@@ -1,7 +1,7 @@
 // Simple password protection system
 class PasswordProtection {
   constructor() {
-    this.correctPassword = 'design2024';
+    this.correctPassword = 'michael2025';
     this.storageKey = 'portfolioAuth';
     this.init();
   }
@@ -50,7 +50,7 @@ class PasswordProtection {
     document.body.appendChild(overlay);
     this.addPasswordStyles();
     this.attachEventListeners();
-    
+
     // Focus on input
     setTimeout(() => {
       document.getElementById('password-input').focus();
@@ -214,11 +214,11 @@ class PasswordProtection {
   authenticate() {
     // Store authentication timestamp
     localStorage.setItem(this.storageKey, Date.now().toString());
-    
+
     // Remove overlay with animation
     const overlay = document.getElementById('password-overlay');
     overlay.style.animation = 'fadeOut 0.3s ease-out forwards';
-    
+
     setTimeout(() => {
       overlay.remove();
     }, 300);
