@@ -17,12 +17,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <title>Michael Hurley | Technical Founder & Frontend Developer</title>
+    <meta name="keywords" content="Michael Hurley, Technical Founder, Frontend Developer, KEATH.ai, ELO AI, React, UI/UX, Automation, Enterprise Sales" />
+    <meta name="description" content="Michael Hurley - Technical Founder & Frontend Developer. Founding team at KEATH.ai ($50M valuation). Expert in React, automation systems, and enterprise GTM." />
 
     <link
       rel="stylesheet"
@@ -33,9 +30,11 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
+    
+    <!-- Password Protection -->
+    <script defer type="module" src="scripts/passwordProtection.js"></script>
+    
 
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -46,9 +45,9 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Michael Hurley</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a Technical Founder & Frontend Developer.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -79,11 +78,20 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                Generalist operator and builder with expertise in frontend development, automation systems, 
+                and enterprise GTM. Founding team member at KEATH.ai ($50M valuation) — built the entire 
+                frontend from scratch, closed enterprise deals, and negotiated with governments including 
+                the El Salvador Ministry of Education.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                Currently building ELO AI, an AI research platform that surfaces LLM disagreements to identify 
+                knowledge frontiers. Expert-level proficiency in React, automation (Zapier/Make), CRM development, 
+                and AI workflow design. Proven track record in enterprise sales, investor relations, and 
+                scaling technical products from zero to thousands of users.
+              </p>
+              <p class="about-wrapper__info-text">
+                Featured in Business Insider (×2), FE News, and PIE News. Successfully deployed systems across 
+                25+ universities globally and led complete due diligence for $50M valuation round.
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -92,7 +100,7 @@
                   class="cta-btn cta-btn--resume"
                   href="assets/resume.pdf"
                 >
-                  View Resume
+                  View CV
                 </a>
               </span>
             </div>
@@ -108,25 +116,76 @@
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
 
-          <!-- Notice: each .row is a project -->
+          <!-- ELO AI Project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">ELO AI</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    AI research platform surfacing LLM disagreements to identify knowledge frontiers. 
+                    Built product to beta with 200+ waitlist users and 12 PhD researchers testing. 
+                    Led investor outreach to late-stage discussions and designed complete product architecture and GTM strategy. 
+                    React, AI APIs, Research Platform.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://www.eloai.org"
                 >
-                  See Live
+                  Visit ELO AI
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://youtu.be/NPFKGkwkRF0"
+                >
+                  Watch Demo
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <div class="video-wrapper">
+                  <div class="video-container">
+                    <iframe
+                      src="https://www.youtube.com/embed/NPFKGkwkRF0"
+                      title="ELO AI Demo"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      class="responsive-video"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- KEATH.ai Enterprise Platform -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">KEATH.ai Enterprise Platform</h3>
+                <div>
+                  <p class="mb-4">
+                    Designed and shipped the entire enterprise assessment platform frontend from scratch. 
+                    25+ university partners globally, $50M valuation. Built complex institutional dashboards, 
+                    assessment workflows, and data visualization systems. Architected scalable React components 
+                    for thousands of concurrent users. Enterprise UI/UX, React Architecture, Data Visualization.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://delightful-pie-3c440b.netlify.app"
+                >
+                  View Platform
                 </a>
                 <a
                   rel="noreferrer"
@@ -134,13 +193,13 @@
                   class="cta-btn text-color-main"
                   href="#!"
                 >
-                  Source Code
+                  Case Study
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://delightful-pie-3c440b.netlify.app" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -149,9 +208,9 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="KEATH.ai Enterprise Platform Screenshot"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/KEATHsite.png"
                     />
                   </div>
                 </a>
@@ -160,39 +219,40 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- KEATH.ai Web Application -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">KEATH.ai Web Application</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    Sole frontend developer on customer-facing web application used by thousands of students. 
+                    Designed and implemented responsive UI/UX flows, interactive assessment interfaces, and 
+                    real-time feedback systems. Built with React, focusing on accessibility and performance 
+                    optimization for diverse user bases. Customer-Facing UI, React Development, UX Design.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://spiffy-torte-532234.netlify.app"
                 >
-                  See Live
+                  View App
                 </a>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://joyful-seahorse-a93267.netlify.app/"
                 >
-                  Source Code
+                  See Portfolio
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://spiffy-torte-532234.netlify.app" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -201,60 +261,9 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="KEATH.ai Web Application Screenshot"
                       class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/KEATHapp.png"
                     />
                   </div>
                 </a>
@@ -267,18 +276,20 @@
     </section>
     <!-- /END Projects Section -->
 
+    <!-- Todo: Add additional projects section here to showcase more work -->
+
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">Ready to build something extraordinary? Let's collaborate on your next project.</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:michaellouishurley@gmail.com"
+            >Get In Touch</a
           >
         </div>
       </div>
@@ -292,49 +303,21 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://linkedin.com/in/michaelhurley" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/michaelhurley" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="mailto:michaellouishurley@gmail.com" target="_blank">
+            <i class="fa fa-envelope fa-inverse"></i>
           </a>
         </div>
 
         <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
+          © 2024 - Designed and built by Michael Hurley with passion.
         </p>
       </div>
     </footer>
