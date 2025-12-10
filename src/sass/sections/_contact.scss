@@ -1,9 +1,7 @@
 #contact {
-  background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
+  background-image: linear-gradient(135deg,
+      $primary-color 0%,
+      $secondary-color 100%);
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%) !important;
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%) !important;
   padding: 15rem 0 10rem 0;
@@ -35,5 +33,49 @@
         font-size: 2rem;
       }
     }
+  }
+
+  // Skills Carousel
+  .skills-carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 0;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+
+    .skills-track {
+      display: flex;
+      gap: 4rem;
+      width: max-content;
+      animation: scroll 30s linear infinite;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+
+    .skill-item {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      white-space: nowrap;
+      transition: color 0.3s ease;
+      cursor: default;
+
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }

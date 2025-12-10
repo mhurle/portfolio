@@ -44,14 +44,14 @@ export const targetElements = [
     },
   },
   {
-    element: ".project-wrapper__text",
+    element: ".project-wrapper__text:not(.manual-reveal)",
     animation: {
       delay: 500,
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
   {
-    element: ".project-wrapper__image",
+    element: ".project-wrapper__image:not(.manual-reveal)",
     animation: {
       delay: 1000,
       origin: window.innerWidth > 768 ? "right" : "bottom",
