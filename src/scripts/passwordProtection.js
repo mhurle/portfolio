@@ -1,4 +1,7 @@
 // Simple password protection system
+// Toggle this to enable/disable password protection
+const ENABLE_PASSWORD_PROTECTION = false;
+
 class PasswordProtection {
   constructor() {
     this.correctPassword = 'michael2025';
@@ -7,6 +10,11 @@ class PasswordProtection {
   }
 
   init() {
+    // If password protection is disabled, don't show overlay
+    if (!ENABLE_PASSWORD_PROTECTION) {
+      return;
+    }
+
     // Check if user is already authenticated
     if (this.isAuthenticated()) {
       return;
